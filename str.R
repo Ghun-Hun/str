@@ -1,6 +1,7 @@
 library(XBRL)
 library(RCurl)
 library(curl)
+library(dplyr)
 # 上市、上櫃、興櫃、公開發行 
 mType<-c("sii", "otc", "rotc", "pub")
 # 1-水泥工業     2-食品工業       3-塑膠工業       4-紡織纖維       5-電機機械
@@ -16,21 +17,20 @@ iType<-c("01","02","03","04","05","06","07","08","09",10:32,80,91,97,98,99,"XX")
 rType <-c("A", "B", "C")
 
 url<-"http://mops.twse.com.tw/server-java/FileDownLoad?firstin=true&step=9&fileName=" 
-# <= "2012"
-year<-"2012"
 
-cburl<-function(urls,years,q,mT,iT,rT=rType[3]){
+
+Xdownload<-function(urls,years,q,mT,iT,rT=rType[3]){
   filename<-paste0(years,"-",q,"-",mT,"-",iT,"-",rT,".zip")
   if(years<=2012){
     cburls<-paste0(urls,filename,"&filePath=/home/html/nas/xbrl/",years,"/")
   }else{
     cburls<-paste0(urls,filename,"&filePath=/home/html/nas/ifrs/",years,"/")
   }
-  cburls
+  download.file(cburls,destfile=filename,method="libcurl",mode="wb")
 }
+Xdownload(url,"2014","02",mType[1],iType[1],rType[3])
 
-urls<-cburl(url,"2014","02",mType[1],iType[2],rType[3])
 
-download.file(urls,destfile="reviews.zip",method="libcurl",mode="wb")
+
 
 
