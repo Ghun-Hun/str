@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:ifrs="http://xbrl.iasb.org/taxonomy/2010-04-30/ifrs" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tifrs-SCF="http://www.xbrl.org/tifrs/scf/2014-03-31" xmlns:tifrs-SCF-ci="http://www.xbrl.org/tifrs/scf/ci/2014-03-31" xmlns:tifrs-ar="http://www.xbrl.org/tifrs/ar/2014-03-31" xmlns:tifrs-bsci-ci="http://www.xbrl.org/tifrs/bsci/ci/2014-03-31" xmlns:tifrs-ci-cr="http://www.xbrl.org/tifrs/ci/cr/2014-03-31" xmlns:tifrs-es="http://www.xbrl.org/tifrs/es/2014-03-31" xmlns:tifrs-es-cr="http://www.xbrl.org/tifrs/es/cr/2014-03-31" xmlns:tifrs-notes="http://www.xbrl.org/tifrs/notes/2014-03-31" xmlns:tifrs-notes-ci="http://www.xbrl.org/tifrs/notes/ci/2014-03-31" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<link:schemaRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tifrs-ci-cr-2014-03-31.xsd" xlink:type="simple"/>	<context id="From20130101To20130630_Total3">
+	<link:schemaRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="../tifrs-20140331/XBRL_TW_Entry_Points/CI/CR/tifrs-ci-cr-2014-03-31.xsd" xlink:type="simple"/>	<context id="From20130101To20130630_Total3">
 		<entity>
 			<identifier scheme="http://www.twse.com.tw">1101</identifier>
 		</entity>

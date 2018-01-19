@@ -1,0 +1,5 @@
+"","unitId","measure","unitNumerator","unitDenominator"
+"1","TWD","iso4217:TWD",NA,NA
+"2","Shares","xbrli:shares",NA,NA
+"3","EarningsPerShare",NA,"iso4217:TWD","xbrli:shares"
+"4","Pure","xbrli:pure",NA,NA

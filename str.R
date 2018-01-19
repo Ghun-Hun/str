@@ -30,7 +30,7 @@ Xdownload<-function(urls,years,q,mT,iT,rT=rType[3]){
 }
 Xdownload(url,"2014","02",mType[1],iType[1],rType[3])
 
+ins<-".\\2014-02-sii-01-C\\tifrs-fr1-m1-ci-cr-1101-2014Q2.xml"
 
-
-
+xbrl.vars <- xbrlDoAll(ins, cache.dir="XBRLcache", prefix.out="out", verbose=TRUE)
 
