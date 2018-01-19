@@ -28,9 +28,17 @@ Xdownload<-function(urls,years,q,mT,iT,rT=rType[3]){
   }
   download.file(cburls,destfile=filename,method="libcurl",mode="wb")
 }
+
+
+
+
 Xdownload(url,"2014","02",mType[1],iType[1],rType[3])
 
+inst<-list.files(".//2014-02-sii-01-C")
+## XBRL instance file to be analyzed, accessed
+## directly from SEC website:
 
-
-
+## Level 1: Function that does all work and returns
+## a list of data frames with extracted information:
+xbrl.vars <- xbrlDoAll(paste0(".//2014-02-sii-01-C//",inst[1]), verbose=TRUE)
 
